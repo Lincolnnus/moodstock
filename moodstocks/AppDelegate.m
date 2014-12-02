@@ -7,9 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import <Moodstocks/Moodstocks.h>
+#import "ScannerViewController.h"
 
-@interface AppDelegate ()
+#define MS_API_KEY @"j9z14jwrm9qhon3bzxbt"
+#define MS_API_SECRET @"FFF7PjybOlC8me4S"
 
+@interface AppDelegate (){
+    MSScanner *_scanner;
+}
 @end
 
 @implementation AppDelegate
@@ -17,6 +23,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    ScannerViewController *scannerVC = [[ScannerViewController alloc] init];
+    scannerVC.scanner = _scanner;
+    self.window.rootViewController = scannerVC;
+    [self.window makeKeyAndVisible];
+    NSString *path = [MSScanner cachesPathFor:@"scanner.db"];
+    _scanner = [[MSScanner alloc] init];
+    [_scanner openWithPath:path key:MS_API_KEY secret:MS_API_SECRET error:nil];
+    // Create the progression and completion blocks:
+    void (^completionBlock)(MSSync *, NSError *) = ^(MSSync *op, NSError *error) {
+        if (error)
+            NSLog(@"Sync failed with error: %@", [error ms_message]);
+        else
+            NSLog(@"Sync succeeded (%li images(s))", (long)[_scanner count:nil]);
+    };
+    
+    void (^progressionBlock)(NSInteger) = ^(NSInteger percent) {
+        NSLog(@"Sync progressing: %li%%", (long)percent);
+    };
+    
+    // Launch the synchronization
+    [_scanner syncInBackgroundWithBlock:completionBlock progressBlock:progressionBlock];
     return YES;
 }
 
@@ -40,6 +68,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [_scanner close:nil];
 }
 
 @end
