@@ -6,26 +6,28 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScannerViewController">
             <connections>
-                <outlet property="videoPreview" destination="EhS-H9-0QA" id="8tr-ZH-EC5"/>
+                <outlet property="videoPreview" destination="FMF-xw-vTQ" id="ouy-ks-GWA"/>
+                <outlet property="view" destination="PsY-Sw-AOt" id="wOC-8X-aeY"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="PsY-Sw-AOt">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhS-H9-0QA">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FMF-xw-vTQ">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="EhS-H9-0QA" secondAttribute="trailing" id="0LC-wk-tob"/>
-                <constraint firstAttribute="bottom" secondItem="EhS-H9-0QA" secondAttribute="bottom" id="Dwh-2n-15z"/>
-                <constraint firstItem="EhS-H9-0QA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="m4F-hl-1xZ"/>
-                <constraint firstItem="EhS-H9-0QA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vfe-dR-gNQ"/>
+                <constraint firstItem="FMF-xw-vTQ" firstAttribute="top" secondItem="PsY-Sw-AOt" secondAttribute="top" id="9VZ-gY-FYj"/>
+                <constraint firstAttribute="trailing" secondItem="FMF-xw-vTQ" secondAttribute="trailing" id="OUd-r6-4nj"/>
+                <constraint firstItem="FMF-xw-vTQ" firstAttribute="leading" secondItem="PsY-Sw-AOt" secondAttribute="leading" id="riH-R8-9an"/>
+                <constraint firstAttribute="bottom" secondItem="FMF-xw-vTQ" secondAttribute="bottom" id="stx-a4-2hS"/>
             </constraints>
+            <point key="canvasLocation" x="331" y="383"/>
         </view>
     </objects>
 </document>

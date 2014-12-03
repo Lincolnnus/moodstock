@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FEF45C8F-69E1-424D-A610-25D1BDCE5252</string>
+	<key>IDESourceControlProjectName</key>
+	<string>moodstocks</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3FCBA00C47FE66DEEF52ABA1027C948DDA983150</key>
+		<string>https://github.com/Lincolnnus/moodstock</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>moodstocks.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3FCBA00C47FE66DEEF52ABA1027C948DDA983150</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Lincolnnus/moodstock</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3FCBA00C47FE66DEEF52ABA1027C948DDA983150</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3FCBA00C47FE66DEEF52ABA1027C948DDA983150</string>
+			<key>IDESourceControlWCCName</key>
+			<string>moodstocks</string>
+		</dict>
+	</array>
+</dict>
+</plist>

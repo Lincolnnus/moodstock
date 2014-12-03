@@ -1,0 +1,10 @@
+PODS:
+  - Moodstocks-iOS-SDK (4.0.5)
+
+DEPENDENCIES:
+  - Moodstocks-iOS-SDK (~> 4.0)
+
+SPEC CHECKSUMS:
+  Moodstocks-iOS-SDK: 0e67e5a2fedf5def9cf90d53b4170dafed6a7ce4
+
+COCOAPODS: 0.35.0

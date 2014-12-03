@@ -1,0 +1,1 @@
+../../../Moodstocks-iOS-SDK/moodstocks-ios-sdk-4.0.5/Moodstocks.framework/Headers/MSApiSearch.h

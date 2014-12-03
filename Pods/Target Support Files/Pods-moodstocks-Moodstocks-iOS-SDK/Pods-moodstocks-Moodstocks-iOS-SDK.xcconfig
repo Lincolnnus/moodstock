@@ -1,0 +1,2 @@
+PODS_MOODSTOCKS_MOODSTOCKS_IOS_SDK_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/Moodstocks-iOS-SDK/moodstocks-ios-sdk-4.0.5/"
+PODS_MOODSTOCKS_MOODSTOCKS_IOS_SDK_OTHER_LDFLAGS = -ObjC -framework "AVFoundation" -framework "CoreMedia" -framework "CoreVideo" -framework "Moodstocks" -framework "QuartzCore"
